@@ -1,0 +1,144 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    background-color: #FFF8E7; /* Light Ivory */
+    color: #2C2C2C; /* Dark Charcoal */
+    margin: 0;
+    padding: 0;
+    cursor: url('images/10\ copy.png'), auto; /* Add this line for custom cursor */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #D4A373; /* Warm Tan */
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C2C2C; /* Dark Charcoal */
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8B4513; /* Saddle Brown */
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+}
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #E5E5E5; /* Light Grey */
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px;
+}
+
+.tara-animation {
+    font-size: 48px;
+    margin: 20px 0;
+    background: linear-gradient(90deg, #ff8c00, #e52e71);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 3s infinite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-image img {
+    max-width: 60%;
+    height: auto;
+    border: 5px solid #8B4513; /* Saddle Brown */
+    padding: 10px;
+}
+
+.cool-text {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #8B0000; /* Dark Red */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.live-button, .make-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #2C2C2C; /* Dark Charcoal */
+    color: #FFF8E7; /* Light Ivory */
+    transition: background-color 0.3s ease;
+}
+
+.live-button:hover, .make-button:hover {
+    background-color: #8B0000; /* Dark Red */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFF8E7; /* Light Ivory */
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #8B4513; /* Saddle Brown */
+    padding: 5px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
